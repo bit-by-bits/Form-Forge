@@ -60,3 +60,16 @@
 .button2:hover {
   background-color: rgb(244, 244, 244) !important;
 }
+
+@media (max-width: 900px) {
+  .form {
+    grid-template-columns: 1fr;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 20px;
+  }
+}

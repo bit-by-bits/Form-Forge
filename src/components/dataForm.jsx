@@ -3,15 +3,17 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import data from "../data/form";
 import { add } from "../redux/formSlice";
+import { useWindowSize } from "@react-hook/window-size";
 import { Form, Select, Input, Button, message } from "antd";
 
 const DataForm = () => {
   // STATES
 
+  const dispatch = useDispatch();
+  const [width, height] = useWindowSize();
+
   const [form] = Form.useForm();
   const [schema, setSchema] = useState([]);
-
-  const dispatch = useDispatch();
 
   // EFFECTS
 
@@ -38,7 +40,7 @@ const DataForm = () => {
       <Form
         form={form}
         name={data?.slug}
-        labelCol={{ span: 10 }}
+        labelCol={{ span: width > 900 ? 10 : 8 }}
         wrapperCol={{ span: 30 }}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
