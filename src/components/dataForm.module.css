@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  background-color: #f8f4e5;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 30px;
+}
+
+.form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  padding-right: 5px;
+}
+
+.input {
+  display: block !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  border: none !important;
+  border-color: #f8f4e5 !important;
+  border-bottom: 5px solid rgba(0, 0, 0, 1) !important;
+  background-color: #f8f4e5 !important;
+  padding-left: 5px !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  color: rgba(0, 0, 0, 1) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.input:focus {
+  border-bottom: 5px solid #ffa580 !important;
+}
+
+.button {
+  background-color: #ffa580 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.button:hover {
+  background-color: #ff8a4d !important;
+}
+
+.button2 {
+  border: 1px solid #ffa580 !important;
+  color: #ffa580 !important;
+  margin-left: 10px !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.button2:hover {
+  background-color: rgb(244, 244, 244) !important;
+}
