@@ -77,7 +77,7 @@ const DataTable = () => {
     }
 
     setBody(BODY);
-  }, [schema, entries]);
+  }, [entries, schema, width]);
 
   // FUNCTIONS
 

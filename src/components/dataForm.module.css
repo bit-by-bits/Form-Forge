@@ -61,6 +61,20 @@
   background-color: rgb(244, 244, 244) !important;
 }
 
+
+
+@media (min-width: 1400px) {
+  .form {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .wrapper{
+    scale: 1.4;
+  }
+}
+
 @media (max-width: 900px) {
   .form {
     grid-template-columns: 1fr;

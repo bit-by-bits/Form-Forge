@@ -16,3 +16,9 @@ body {
   padding: 10px 0 25px 0;
   gap: 50px;
 }
+
+@media (min-width: 2100px) {
+  .main {
+    gap: 300px;
+  }
+}

@@ -32,6 +32,12 @@
   color: #ffa580 !important;
 }
 
+@media (min-width: 2100px) {
+  .wrapper {
+    scale: 1.4;
+  }
+}
+
 @media (max-width: 1400px) {
   .wrapper {
     padding: 20px;
