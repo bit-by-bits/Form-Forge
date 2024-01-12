@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { remove } from "../redux/formSlice";
 import { useWindowSize } from "@react-hook/window-size";
 import data from "../data/form";
-import "../styles/dataTable.css";
+import styles from "../styles/dataTable.module.css";
 
 const DataTable = () => {
   const dispatch = useDispatch();
@@ -64,8 +64,8 @@ const DataTable = () => {
   }, [entries, schema, width, dispatch]);
 
   return (
-    <div className="wrapper">
-      <Table className="table" columns={head} dataSource={body} />
+    <div className={styles.wrapper}>
+      <Table className={styles.table} columns={head} dataSource={body} />
     </div>
   );
 };

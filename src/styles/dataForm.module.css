@@ -1,12 +1,26 @@
+/* Color Variables */
+:root {
+  --primary-bg-color: #f8f4e5;
+  --border-color: rgba(0, 0, 0, 1);
+  --shadow-color: #ffa580;
+  --text-color: rgba(0, 0, 0, 1);
+  --accent-color: #ffa580;
+  --hover-color: #ff8a4d;
+  --button2-border-color: #ffa580;
+  --button2-text-color: #ffa580;
+  --button2-hover-bg-color: rgb(244, 244, 244);
+}
+
+/* Base Styles */
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 50px;
-  background-color: #f8f4e5;
-  border: 2px solid rgba(0, 0, 0, 1);
-  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+  background-color: var(--primary-bg-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 15px 15px 1px var(--shadow-color), 15px 15px 1px 2px var(--border-color);
 }
 
 .form {
@@ -18,7 +32,7 @@
 .form label {
   font-size: 14px;
   font-weight: 600;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   padding-right: 5px;
 }
 
@@ -27,42 +41,41 @@
   width: 100% !important;
   font-size: 14px !important;
   border: none !important;
-  border-color: #f8f4e5 !important;
-  border-bottom: 5px solid rgba(0, 0, 0, 1) !important;
-  background-color: #f8f4e5 !important;
+  border-color: var(--primary-bg-color) !important;
+  border-bottom: 5px solid var(--text-color) !important;
+  background-color: var(--primary-bg-color) !important;
   padding-left: 5px !important;
   border-radius: 0 !important;
   outline: none !important;
-  color: rgba(0, 0, 0, 1) !important;
+  color: var(--text-color) !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 .input:focus {
-  border-bottom: 5px solid #ffa580 !important;
+  border-bottom: 5px solid var(--accent-color) !important;
 }
 
 .button {
-  background-color: #ffa580 !important;
+  background-color: var(--accent-color) !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 .button:hover {
-  background-color: #ff8a4d !important;
+  background-color: var(--hover-color) !important;
 }
 
 .button2 {
-  border: 1px solid #ffa580 !important;
-  color: #ffa580 !important;
+  border: 1px solid var(--button2-border-color) !important;
+  color: var(--button2-text-color) !important;
   margin-left: 10px !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 .button2:hover {
-  background-color: rgb(244, 244, 244) !important;
+  background-color: var(--button2-hover-bg-color) !important;
 }
 
-
-
+/* Responsive Design */
 @media (min-width: 1400px) {
   .form {
     width: 1000px;
@@ -70,8 +83,8 @@
 }
 
 @media (min-width: 2100px) {
-  .wrapper{
-    scale: 1.4;
+  .wrapper {
+    transform: scale(1.4);
   }
 }
 

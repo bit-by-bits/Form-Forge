@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles/main.css";
 import DataForm from "./components/dataForm";
 import DataTable from "./components/dataTable";
 

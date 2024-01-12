@@ -1,4 +1,4 @@
-# Filmboard-Front
+# Form-Forge
 
 This project is a dynamic form builder for creating JSON-based forms with data validation, Redux storage, and tabular display. It allows users to add and remove form fields, and it saves the data to Redux state for persistence (as well as local storage for additional protection).
 
@@ -18,7 +18,7 @@ This project is a dynamic form builder for creating JSON-based forms with data v
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bit-by-bits/Filmboard-Front.git
+   git clone https://github.com/bit-by-bits/Form-Forge.git
    ```
 
 2. Install the dependencies:

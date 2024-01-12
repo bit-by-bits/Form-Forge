@@ -1,10 +1,10 @@
-import styles from "./dataForm.module.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import { Form, Select, Input, Button, message } from "antd";
+import { useWindowSize } from "@react-hook/window-size";
 import data from "../data/form";
 import { add } from "../redux/formSlice";
-import { useWindowSize } from "@react-hook/window-size";
-import { Form, Select, Input, Button, message } from "antd";
+import styles from "../styles/dataForm.module.css";
 
 const DataForm = () => {
   const dispatch = useDispatch();
@@ -19,7 +19,6 @@ const DataForm = () => {
   const onFinish = values => {
     dispatch(add({ ...values }));
     form.resetFields();
-    console.log("Success:", values);
   };
 
   const onFinishFailed = errorInfo => {

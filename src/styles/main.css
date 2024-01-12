@@ -1,5 +1,8 @@
 :root {
   --background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg);
+  
+  --pagination-active-border-color: #ffa580;
+  --pagination-active-text-color: #ffa580;
 }
 
 body {
@@ -16,6 +19,16 @@ body {
   padding: 10px 0 25px;
   gap: 50px;
 }
+
+
+.ant-pagination .ant-pagination-item-active {
+  border-color: var(--pagination-active-border-color) !important;
+}
+
+.ant-pagination-item-active a {
+  color: var(--pagination-active-text-color) !important;
+}
+
 
 @media (min-width: 2100px) {
   .app {

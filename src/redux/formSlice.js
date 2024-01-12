@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const findEntryIndex = (entries, equipmentNo) =>
-  entries.findIndex((entry) => entry.equipment_no === equipmentNo);
+  entries.findIndex(entry => entry.equipment_no === equipmentNo);
 
 export const formSlice = createSlice({
   name: "form",

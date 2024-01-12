@@ -1,0 +1,50 @@
+/* Color Variables */
+:root {
+  --primary-bg-color: #f8f4e5;
+  --border-color: rgba(0, 0, 0, 1);
+  --shadow-color: #ffa580;
+  --table-bg-color: #fff;
+  --table-shadow-color: rgba(0, 0, 0, 0.1);
+  --table-header-bg-color: #ffa580;
+  --table-header-text-color: #fff;
+}
+
+/* Base Styles */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: var(--primary-bg-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 15px 15px 1px var(--shadow-color), 15px 15px 1px 2px var(--border-color);
+}
+
+.table {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--table-shadow-color);
+}
+
+.table * {
+  text-align: center !important;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background-color: var(--table-header-bg-color) !important;
+  color: var(--table-header-text-color) !important;
+}
+
+/* Responsive Design */
+@media (min-width: 2100px) {
+  .wrapper {
+    transform: scale(1.4);
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    padding: 20px;
+  }
+}
