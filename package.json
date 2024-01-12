@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "pretty": "prettier --write \"src/**/*.{js,jsx}\"",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pretty": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.4",

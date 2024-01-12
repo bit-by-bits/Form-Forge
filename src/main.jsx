@@ -1,13 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import React, { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 import { Provider } from "react-redux";
-import store from "./redux/store.js";
+import store from "./redux/formStore";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+const rootElement = document.getElementById("root");
+
+const renderApp = () => (
+  <StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>
+  </StrictMode>
 );
+
+// Use ReactDOM.createRoot if available (React 18+), otherwise fallback to ReactDOM.render
+const root = ReactDOM.createRoot ? ReactDOM.createRoot(rootElement) : ReactDOM;
+
+root.render(renderApp());

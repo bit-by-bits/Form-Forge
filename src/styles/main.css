@@ -1,0 +1,24 @@
+:root {
+  --background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg);
+}
+
+body {
+  background: var(--background-image) center/cover no-repeat fixed;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px 0 25px;
+  gap: 50px;
+}
+
+@media (min-width: 2100px) {
+  .app {
+    gap: 300px;
+  }
+}
